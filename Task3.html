@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-3</title>
+</head>
+<body>
+    <!--Even and Odd-->  
+    <script>
+        var num = 635;
+        if(num % 2 == 0){
+            document.write("Yaay! It is even number");
+            document.write("<br>");
+            document.write("<hr>");
+        }
+        else{
+            document.write("Yaay! It is odd number");
+            document.write("<br>");
+            document.write("<hr>");
+        }
+        </script>
+        <!--Swapping of numbers with 3rd variable-->
+        <script>
+            var num1 = 20, num2 = 30, temp = 0;
+            temp = num1;
+            num1 = num2;
+            num2 = temp;
+            document.write(num1); 
+            document.write("<br>");
+            document.write(num2);
+            document.write("<br>");
+            document.write("<hr>");
+        </script>
+        <!--Without 3rd variable-->
+        <script>
+            var num1 = 20, num2 = 30;
+            num1 = num1+num2;
+            num2 = num1-num2;
+            num1 = num1-num2;
+            document.write(num1); 
+            document.write("<br>");
+            document.write(num2);
+            document.write("<br>");
+            document.write("<hr>");
+            </script>
+            <!--Swap in a single line-->
+            <script>
+                var num1 = 20, num2 = 30;
+                num1 = num1^num2 ^(num2=num1);
+                document.write(num1); 
+            document.write("<br>");
+            document.write(num2);
+            document.write("<br>");
+            document.write("<hr>");
+            </script>
+            <!--Grade calculation-->
+            <script>
+                var num1 = 55, num2 = 45, num3 = 60, num4 = 65, num5 = 48, sum = 0, percent = 0;
+                sum = num1+num2+num3+num4+num5;
+                percent = (sum/500)*100;
+                if(percent > 80){
+                    document.write("Grade is A");
+                }
+                else if (percent > 60 && percent <= 80){
+                    document.write("Grade is B");
+                }
+                else if(percent > 45 && percent <= 60 ){
+                    document.write("Grade is C");
+                                }
+                else{
+                    document.write("Fail!!")
+                }
+                document.write("<hr>");
+            </script>
+            <!--Reversing a number-->
+            <script>
+                var num = 1234, rev = 0, rem , sum = 0;
+                while(num != 0){
+                    rem = num % 10;
+                    sum = sum+rem;
+                    rev = (rev * 10) + rem;
+                    num /= 10;
+                }
+                document.write(rev);
+                document.write(sum);
+            </script>
+</body>
+</html>
