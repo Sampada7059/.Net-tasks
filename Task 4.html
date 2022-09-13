@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-4</title>
+    <style>
+        .login{
+            background-color: lightgreen;
+            float: center;
+            text-align: center;
+            font-size: large;
+            color: white;
+            padding-inline-start: 10px;
+            font-style: italic;
+            box-sizing: border-box;
+            padding: 100px 120px;
+            margin: 8px 0;
+        }
+        .login:hover{
+            background-color: lightseagreen;
+        }
+        button{
+            background-color: lightcoral;
+            padding: 14px 20px;
+            color: white;
+            margin: 8px 0;
+            border:none;
+        }
+        button:hover{
+            background-color: rgb(43,119,41);
+            color: black;
+        }
+        .loginText{
+            font-size: 30px;
+            font-style: normal;
+            color: violet;
+        }
+        <head>
+            <body>
+                <div class = "login">
+                    <form id = "form-id" method="post" name="myform">
+                        <p>Login form</p>
+                        <label>
+                                        </body>
+            </head>
+    </style>
+    </script>
+    <!--Salary bonus calculation-->  
+    <script>
+        class Sector{
+            constructor(sector){
+                this.sector = sector;
+            }
+            salary_details(){
+            if (this.sector=="IT"){
+                var salary = 50000;
+                var bonus = salary * (50/100);
+                var newSalary = salary+bonus;
+                console.log(salary);
+                console.log(newSalary);
+            }
+            else if(this.sector=="Testing"){
+                var salary = 40000;
+                var bonus = salary * (45/100);
+                var newSalary = salary+bonus;
+                console.log(salary);
+                console.log(newSalary);
+            }
+            else if(this.sector=="Admin"){
+                var salary = 35000;
+                var bonus = salary * (45/100);
+                var newSalary = salary+bonus;
+                console.log(salary);
+                console.log(newSalary);
+            }
+            else{
+                var salary = 30000;
+                var bonus = salary * (20/100);
+                var newSalary = salary+bonus;
+                console.log(salary);
+                console.log(newSalary);
+            }
+        }
+        }
+          var o1 = new Sector("Admin");
+          o1.salary_details();
+    </script> 
+    </body>
+</html>
+        
